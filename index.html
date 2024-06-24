@@ -4,6 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>すとぷり ファンサイト</title>
+        
+    <style>
+        .toolbar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+}
+
+.sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+    </style>
     <style>
         /* CSS よろしくお願いしmath*/
         body {
@@ -15,7 +53,7 @@
             line-height: 1.6;
             font-size: 16px;
             color: #333;
-        }icon/1.jpegicon/1.jpeg
+        }
         header {
             background-color: #4CAF50;
             color: white;
@@ -135,8 +173,8 @@ button {
         <section class="content" id="members">
             <h2 id="human">メンバー 現在0人</h2>
             <ul>
-                <li><strong>りこたん</strong> - このファンサイトの管理者。ころん推し。</li> 
-                <li><strong>テンシンハン</strong> - ファンサイトの初期メンバー。りいぬ推し。</li>
+                <li><strong>りこたん</strong> - このファンサイトの管理者。りいぬ推し。</li> 
+                <li><strong>テンシンハン</strong> - ファングループのイベント企画役。ころん推し。</li>
                 <li><strong>
 </strong></li>
             </ul>
@@ -144,17 +182,19 @@ button {
         <section class="content" id="katsudourog">
             <h2>活動記録</h2>
             <ul>
-                <li>2023/11/27 - アキバアニメイト遠征</li>
-                <li>2024/3/3 - 仙台駅女子会</li>
+                 <li>2024/1/3 - 仙台アニメイト初売り</li>
+                 <li>2024/2/27 - すとぷりウェーク</li>
+                <li>2024/3/27 - アキバアニメイト遠征</li>
+                <li>2024/5/23 - 仙台駅女子会</li>
 <div class="container">
-  <a href="#mem" class="button">詳しく見る</a>
+  <a href="app.html" class="button">詳しく見る</a>
 </div>
 
             </ul>
         </section>
         <section class="content" id="syousa">
             <h2>入会方法</h2>
-            <p>下のリンクからMアプリをインストールしてください。(Mac対応)</p>
+            <p>下のリンクからMacアプリをインストールしてください。(Mac対応)</p>
             <p><a href="app.html" target="_blank">Macアプリダウンロード</a></p>
         </section>
         <section class="content" id="contact">
@@ -166,6 +206,35 @@ button {
             <p>インスタグラム：<a href="https://www.instagram.com/rikotansutopurituishi1/" target="_blank" class="in">https://www.instagram.com/rikotansutopurituishi1/</a></p>
         </section>
     </main>
+        <header>
+        <p>&copy; 2024 すとぷりファンアプリ</p>
+        </header>
+        <div class="toolbar" id="toolbar">
+        ☰
+    </div>
+    <div class="sidebar" id="sidebar">
+
+            <a href="index.html">ホーム</a>
+            <a href="chat.html">チャット</a>
+            <a href="app.html">アプリダウンロード</a>
+            <a href="kiyaku.html">利用規約</a>
+            <a href="privacy.html">プライバシーポリシー</a>
+    </div>
+    <script >
+        document.addEventListener("DOMContentLoaded", function() {
+    const toolbar = document.getElementById("toolbar");
+    const sidebar = document.getElementById("sidebar");
+
+    toolbar.addEventListener("click", function() {
+        if (sidebar.style.left === "-250px") {
+            sidebar.style.left = "0";
+        } else {
+            sidebar.style.left = "-250px";
+        }
+    });
+});
+
+    </script>
         <script>
                         function sleep(ms) {
                           return new Promise(resolve => setTimeout(resolve, ms));

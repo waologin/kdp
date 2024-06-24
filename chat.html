@@ -4,6 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <title>すとぷりファンチャット</title>
+        
+    <style>
+        .toolbar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+}
+
+.sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+    </style>
     <style>
         /* CSS よろしくお願いしmath*/
         body {
@@ -23,6 +61,7 @@
             margin-bottom: 20px;
             border-bottom: 3px solid #388E3C;
         }
+
 .footer {
     position: fixed;
     bottom: 0;
@@ -119,7 +158,12 @@
     line-height: 1;
 }
 
-
+.inf{
+    background-color: #45a049;  
+    font-size: 15px;
+    font-weight: bold;
+    
+}
 
 </style>
 </head>
@@ -128,7 +172,8 @@
         </h1>すとぷり　ファンチャット</h1>
         </header>
     <body>
-        <p>皆さんこんにちは！このサイトの管理者のりこたんです。このチャットは、みなさんが自由に交流出来るように作ったものです。</p>
+        <p class="inf">皆さんこんにちは！管理者のりこたんです。これは、みなさんが自由に交流出来るように作ったものです。基本的には自由に使って良いですが、利用規約でダメになっていることはやらないようにして下さい。
+            では、楽しんで！</p>
 
         <table class="message-table">
     <tr>
@@ -148,7 +193,7 @@
         </td>
         <td class="message">
             <div class="username">みらい(⁠•⁠‿⁠•⁠)</div>
-            <div class="message-text">おしが尊すぎて泣けてきた</div>
+            <div class="message-text">りいぬくんが尊すぎて泣けてきた</div>
         </td>
     </tr>
     <tr>
@@ -157,11 +202,288 @@
             <img src="icon/3.jpeg" alt="User Icon">
         </td>
         <td class="message">
-            <div class="username">西内</div>
-            <div class="message-text">反社会勢力に補助金を！</div>
+            <div class="username">ニチッチ</div>
+            <div class="message-text">まじそれな！　ってか今日の配信やばくなかった？</div>
         </td>
     </tr>
-    
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/2.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">みらい(⁠•⁠‿⁠•⁠)</div>
+            <div class="message-text">りいぬくんの声で心も体も癒されたわ〜</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/4.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">ナポリたん</div>
+            <div class="message-text">ここにころん君推しいないの？</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">ナポリたん</div>
+            <div class="message-text">全然いないやん　だれかー</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">ゆうか</div>
+            <div class="message-text">こんにちは、みなさん！今日のすとぷりのライブ、どうだった？</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">まい</div>
+            <div class="message-text">配信３０分前から待機してたよ〜　ころんくんがめっちゃカッコよかった😍
+
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">あんだーまいく</div>
+            <div class="message-text">ころんくんも良かったけど、りいぬくんの声が最高だったよ～
+
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">プロテスタント（抗議するもの）</div>
+            <div class="message-text">わかる！りいぬくんの声、ほんとに心に残るよね。</div>
+        </td>
+    </tr>    
+            <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">ころりんパスタ</div>
+            <div class="message-text">みんな楽しそうで良かった！次の配信も楽しみだなぁ。どんな曲歌ってくれるのかな？</div>
+        </td>
+    </tr>    
+            <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">まい</div>
+            <div class="message-text">それまじで気になる！　早く聴きたいなぁ。
+
+</div>
+                <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">ころりんパスタ</div>
+            <div class="message-text">そういえば、次のライブ発表されたよね？みんな行く？
+
+</div>
+        </td>
+                </tr>
+                <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">あんだーまいく</div>
+            <div class="message-text">もちろん！今回は応募当たるといいなぁ〜　みんなでまた会えたらいいね！
+
+</div>
+        </td>
+                </tr>
+                <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">まい</div>
+            <div class="message-text"> そうだね！次はもっと大きな会場らしいから、抽選確率上がってそうだね。</div>
+        </td>
+                </tr>
+            </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">ころりんパスタ</div>
+            <div class="message-text">うん、すとぷりのライブはいつも元気をもらえるから、今からすごく楽しみ！
+
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">プロテスタント（抗議する者）</div>
+            <div class="message-text">それと、次のグッズも楽しみだね。前回のグッズ、すぐに売り切れちゃったから、今回は早めに買わないと！</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">ナポリたん</div>
+            <div class="message-text">そうだね！私ころんくんのグッズ集めてるから、次も絶対ゲットしたい！
+
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">まい</div>
+            <div class="message-text">みんなで一緒にグッズ買いに行くのも楽しそう。今度は早めにテンシンハンさんに相談しないとね。</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">サイトウ</div>
+            <div class="message-text">みんな！昨日のライブ配信見た？
+
+</div>
+        </td>
+    </tr>
+            <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/2.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">みらい(⁠•⁠‿⁠•⁠)</div>
+            <div class="message-text">もちろん！新曲、めっちゃ良かったよね　あのサビが頭から離れないよ～</div>
+        </td>
+            </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">サイトウ</div>
+            <div class="message-text">コメントすごく盛り上がってたね。コメ欄がハートで埋まってたよ
+
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">みらい(⁠•⁠‿⁠•⁠)</div>
+            <div class="message-text"> ほんと！あのハートの量、びっくりしたよ。</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">サイトウ</div>
+            <div class="message-text">そういえば、次のライブ遠征、いろいろ決まったらしいよ！</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">みらい(⁠•⁠‿⁠•⁠)</div>
+            <div class="message-text">知らなかった！　どこにのってるの？</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">サイトウ</div>
+            <div class="message-text">ファンアプリのスケジュールのところに載ってたよ</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">みらい(⁠•⁠‿⁠•⁠)</div>
+            <div class="message-text">ちょっとみてくるわ　バイバイ👋</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">サイトウ</div>
+            <div class="message-text">ばいばい</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="user-icon">
+            <!-- ユーザーアイコンの画像など -->
+            <img src="icon/system.jpeg" alt="User Icon">
+        </td>
+        <td class="message">
+            <div class="username">これより下のメッセージを表示するには、アプリのインストールが必要です</div>
+            <div class="message-text">これより下のメッセージを表示するには、アプリのインストールが必要です</div>
+        </td>
+    </tr>
 </table>
 
         
@@ -171,6 +493,9 @@
         <input type="text" placeholder="メッセージを入力..." id="messageInput">
         <button id="sendButton">送信</button>
      </div>
+            <footer>
+        <p>&copy; 2024 すとぷりファンアプリ</p>
+            </footer>
     <script>
 document.addEventListener('DOMContentLoaded', function() {
     const sendButton = document.getElementById('sendButton');
@@ -181,6 +506,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 window.location.replace("app.html");
 
+    });
+});
+
+    </script>
+          <div class="toolbar" id="toolbar">
+        ☰
+    </div>
+    <div class="sidebar" id="sidebar">
+        
+            <a href="index.html">ホーム</a>
+            <a href="chat.html">チャット</a>
+            <a href="app.html">アプリダウンロード</a>
+            <a href="kiyaku.html">利用規約</a>
+            <a href="privacy.html">プライバシーポリシー</a>
+    </div>
+    <script >
+        document.addEventListener("DOMContentLoaded", function() {
+    const toolbar = document.getElementById("toolbar");
+    const sidebar = document.getElementById("sidebar");
+
+    toolbar.addEventListener("click", function() {
+        if (sidebar.style.left === "-250px") {
+            sidebar.style.left = "0";
+        } else {
+            sidebar.style.left = "-250px";
+        }
     });
 });
 

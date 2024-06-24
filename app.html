@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.9">
-    <title>すとぷり　ファンアプリ</title>
+    <title>すとぷり ファンアプリ</title>
     <style>
-        /* CSS よろしくお願いしmath*/
+        /* CSS よろしくお願いしmath */
         body {
             font-family: 'Noto Sans JP', sans-serif;
             background-color: #f0f0f0;
@@ -22,23 +22,166 @@
             padding: 20px;
             margin-bottom: 20px;
             border-bottom: 3px solid #388E3C;
-        0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    border-top: 1px solid #ddd;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .download-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .download-btn:hover {
+            background-color: #388E3C;
+        }
+        .updates {
+            margin-top: 40px;
+        }
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .screenshots img {
+            width: calc(33% - 10px);
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .testimonials {
+            margin-top: 40px;
+        }
+        .testimonial {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #4CAF50;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-top: 3px solid #388E3C;
+        }
+    </style>
+        
+    <style>
+        .toolbar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
 }
 
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+}
 
+.sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
     </style>
 </head>
 <body>
     <header>
-        <h1>すとぷり　ファンアプリ</h1>
-        </header>
-    <body>
-    <script>
+        <h1>すとぷり ファンアプリ</h1>
+    </header>
+    <div class="container">
+        <p>すとぷりファンのためのアプリです！最新情報や限定コンテンツをお楽しみください。</p>
+        <div class="download-section">
+            <p>アプリをダウンロードして、さらにすとぷりを楽しもう！</p>
+            <a href="#" class="download-btn">アプリをダウンロード</a>
+        </div>
+        <div class="updates">
+            <h2>更新情報</h2>
+            <p>2024年5月 大型アップデート</p>
+            <p>2024年1月 会員限定機能追加</p>
+            <p>2023年5月 大型アップデード</p>
+            <p>2022年5月 リリース</p>
+        </div>
+        <div class="testimonials">
+            <h2>利用者の声</h2>
+            <div class="testimonial">
+                <p>"すとぷりの情報をすぐにチェックできて、とても便利です！"</p>
+                <p>- なすび</p>
+            </div>
+            <div class="testimonial">
+                <p>"限定コンテンツが満載で、毎日使っています。"</p>
+                <p>- まいくろほん</p>
+            </div>
+            <div class="testimonial">
+                <p>"アプリのデザインが可愛くて気に入っています。"</p>
+                <p>- みく</p>
+            </div>
+        </div>
+    </div>
+        <div class="toolbar" id="toolbar">
+        ☰
+    </div>
+    <div class="sidebar" id="sidebar">
+        <a href="index.html">ホーム</a>
+            <a href="chat.html">チャット</a>
+            <a href="app.html">アプリダウンロード</a>
+            <a href="kiyaku.html">利用規約</a>
+            <a href="privacy.html">プライバシーポリシー</a>
+    </div>
+    <script >
+        document.addEventListener("DOMContentLoaded", function() {
+    const toolbar = document.getElementById("toolbar");
+    const sidebar = document.getElementById("sidebar");
+
+    toolbar.addEventListener("click", function() {
+        if (sidebar.style.left === "-250px") {
+            sidebar.style.left = "0";
+        } else {
+            sidebar.style.left = "-250px";
+        }
+    });
+});
 
     </script>
-    </body>
-
-    
+    <footer>
+        <p>&copy; 2024 すとぷりファンアプリ</p>
+    </footer>
+</body>
+</html>
